@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className=" flex list-none justify-between items-center m-0 py-[10px] px-[20px] bg-[#090e1a] border-[1px] border-amber-50">
+      <nav className=" flex list-none justify-between items-center m-0 py-[10px] px-[20px] bg-[#090e1a] border-[1px] border-amber-50 w-screen">
         <div className=" flex gap-5 items-center w-[50vw]">
           <h1 className="relative inline-block text-2xl text-white font-bold tracking-wider cursor-pointer hover:scale-110 transition-all duration-400 before:absolute before:left-1/2 before:bottom-0 before:w-0 before:h-0.5 before:bg-white before:transition-all before:duration-400 before:ease-in-out hover:before:left-0 hover:before:w-full ">
             AnkitaPrajapati
@@ -69,7 +69,7 @@ const Navbar = () => {
       <ul
         className={`${
           isMenuOpen ? "block" : "hidden"
-        } block sm:hidden text-yellow-50 backdrop-blur-md bg-black/60 absolute w-[100vw] font-semibold text-2xl p-4 space-y-1`}
+        } block sm:hidden text-yellow-50 backdrop-blur-md bg-black/60 absolute w-[100vw] font-semibold text-2xl p-4 space-y-1 z-100`}
       >
         <li className="hover:underline cursor-pointer">Home</li>
         <li className="hover:underline cursor-pointer">About</li>
