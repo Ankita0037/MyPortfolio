@@ -6,7 +6,7 @@ const toolSkills = ["Git", "GitHub", "Postman"];
 
 const Skills = () => {
   return (
-    <div className="relative text-white bg-gradient-to-b from-[#0f172b] to-[#1c294c] w-screen min-h-[100vh] p-10 space-y-10 ">
+    <div id = "skill-section" className="relative text-white bg-[#1c294c] w-screen min-h-[100vh] p-10 space-y-10 ">
       <div className="flex justify-center font-bold text-6xl ">
         <h1 className = "hover:scale-110 transition-all duration-300 ease-in-out cursor-pointer">Technical Skills</h1>
       </div>

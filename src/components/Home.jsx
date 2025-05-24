@@ -12,6 +12,7 @@ const Home = () => {
     <>
       <Navbar />
       <Hero />
+      <About/>
       <Skills />
       <Project />
       <Education />

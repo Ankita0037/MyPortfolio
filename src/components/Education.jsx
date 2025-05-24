@@ -3,7 +3,7 @@ import { FaGraduationCap } from "react-icons/fa";
 
 const Education = () => {
   return (
-    <div className="text-white bg-[#1c294c] w-screen min-h-[93vh] p-4 sm:p-6 flex flex-col items-center">
+    <div id = "education-section" className=" text-white bg-[#1c294c] w-screen min-h-[93vh] p-4 sm:p-6 flex flex-col items-center">
       {/* Title Section */}
       <div className="flex flex-col items-center mb-10 sm:mb-20 w-full">
         <div className="flex items-center gap-4">

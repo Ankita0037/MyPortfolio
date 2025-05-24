@@ -1,40 +1,42 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
+import { RiScrollToBottomLine } from "react-icons/ri";
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Hero = () => {
   return (
     <div className="relative text-white bg-[#090e1a] w-screen min-h-[100vh] p-5">
       {/* Hero Section */}
 
-      <div className="flex flex-col justify-between xl:flex-row xl:justify-between items-center w-100% ">
-        <div className="space-y-4 w-full xl:w-1/2 h-60 sm:h-auto">
+      <div className="flex flex-col justify-between xl:flex-row xl:justify-between items-center w-100% p-0 sm:p-9 mt-11">
+        <div className="pt-0 sm:pt-12 xl:pt-0 space-y-4 w-full xl:w-1/2 h-60 sm:h-auto transition-all duration-500 ease-in-out ">
           <h1 className="font-bold text-3xl tracking-wider">
             Hi, I'am Ankita Prajapati
           </h1>
-          <div className="font-bold tracking-wider text-xl md:text-[25px] h-25 sm:h-auto">
-            <TypeAnimation
+          <div className=" font-bold tracking-wider sm:text-2xl h-20 sm:h-14">
+            <span className="text-2xl sm:text-3xl">I am a </span>
+            <TypeAnimation className="text-3xl sm:text-4xl lg:text-5xl inline-block text-[#ffff99]"
               sequence={[
-                "I am a Programmer!",
+                "Programmer!",
                 1000,
-                "I am a Full Stack Developer!",
+                "Full Stack Developer!",
                 1000,
               ]}
               Wrapper="span"
               speed={50}
-              style={{ fontSize: "2em", display: "inline-block" }}
               repeat={Infinity}
             />
           </div>
 
-          <p className="text-2xl font-semibold tracking-wider">
+          <p className="text-xl sm:text-2xl font-semibold tracking-wider">
             I'am based in Mumbai,Maharastra, and I'am Passionate about Frontend,
             Full Stack.
           </p>
         </div>
-        <div className="h-[500px] flex items-center ">
+        <div className="h-70 w-70 sm:w-100 sm:h-100 bg-white rounded-full flex justify-center items-center mt-10 hover:drop-shadow-[0_0_20px_white] transition-all duration-500 ease-in-out">
           <img
             src="src\images\my photo.jpg"
-            className="h-100 w-100 rounded-full z-100 hover:scale-105 hover:border-2 transition-all duration-500 ease-in-out "
+            className="h-70 w-70 sm:w-100 sm:h-100 rounded-full z-100 hover:scale-105 hover:border-2 transition-all duration-500 ease-in-out "
           ></img>
         </div>
       </div>
@@ -59,6 +61,11 @@ const Hero = () => {
           ></path>
         </svg>
       </div>
+      <Link to="#about-section" smooth>
+      <div className="flex justify-center items-center h-20 text-white animate-pulse duration-100">
+        <RiScrollToBottomLine className="relative z-55 w-10 h-10 sm:w-20 sm:h-20 animate-bounce hover:animate-none "/>
+      </div>
+      </Link>
     </div>
   );
 };
