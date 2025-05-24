@@ -8,25 +8,28 @@ import { useState } from "react";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const scrollToTop = () =>{
+  const scrollToTop = () => {
     window.scrollTo({
-      top:0, 
-      behavior: "smooth"
-    })
-  }
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   return (
     <div className="fixed z-999 backdrop-blur-md bg-black/50 ">
       <nav className=" flex list-none justify-between items-center m-0 py-[10px] px-[20px] border-[1px] border-b-1 border-b-white w-screen">
         <div className=" flex gap-5 items-center w-[50vw]">
           <Link to="/">
-            <h1 onClick={() => scrollToTop()} className="relative inline-block text-2xl text-white font-bold tracking-wider cursor-pointer hover:scale-110 transition-all duration-400 before:absolute before:left-1/2 before:bottom-0 before:w-0 before:h-0.5 before:bg-white before:transition-all before:duration-400 before:ease-in-out hover:before:left-0 hover:before:w-full">
+            <h1
+              onClick={() => scrollToTop()}
+              className="relative inline-block text-2xl text-white font-bold tracking-wider cursor-pointer hover:scale-110 transition-all duration-400 before:absolute before:left-1/2 before:bottom-0 before:w-0 before:h-0.5 before:bg-white before:transition-all before:duration-400 before:ease-in-out hover:before:left-0 hover:before:w-full"
+            >
               AnkitaPrajapati
             </h1>
           </Link>
           <div
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="text-amber-50 block sm:hidden"
+            className="text-amber-50 block lg:hidden"
           >
             {isMenuOpen ? (
               <IoClose className="w-[30px] h-[30px]" />
@@ -35,26 +38,30 @@ const Navbar = () => {
             )}
           </div>
 
-          <ul className="hidden sm:flex gap-3.5 text-xl font-semibold text-amber-100 ">
-            
+          <ul className="hidden lg:flex gap-3.5 text-xl font-semibold text-amber-100 ">
             <Link to="#about-section" smooth>
               <li className="hover:underline cursor-pointer">About</li>
             </Link>
-            <Link to="#skill-section" smooth >
-            <li className="hover:underline cursor-pointer">Skills</li>
+            <Link to="#skill-section" smooth>
+              <li className="hover:underline cursor-pointer">Skills</li>
             </Link>
-            <Link to="#project-section" smooth >
-            <li className="hover:underline cursor-pointer">Projects</li>
+            <Link to="#project-section" smooth>
+              <li className="hover:underline cursor-pointer">Projects</li>
             </Link>
-             <Link to="#education-section" smooth >
-            <li className="hover:underline cursor-pointer">Education</li>
+            <Link to="#education-section" smooth>
+              <li className="hover:underline cursor-pointer">Education</li>
             </Link>
-             <Link to="#contact-section" smooth >
-            <li className="hover:underline cursor-pointer">Contact</li>
+            <Link to="#contact-section" smooth>
+              <li className="hover:underline cursor-pointer">Contact</li>
             </Link>
 
-            <a href = "https://drive.google.com/file/d/1dd6GlVOjI60H2K3YhuDh6ek7yZOiJvjI/view?usp=drive_link" target="_blank" className="hover:underline cursor-pointer">Resume</a>
-            
+            <a
+              href="https://drive.google.com/file/d/1dd6GlVOjI60H2K3YhuDh6ek7yZOiJvjI/view?usp=drive_link"
+              target="_blank"
+              className="hover:underline cursor-pointer"
+            >
+              Resume
+            </a>
           </ul>
         </div>
 
@@ -94,10 +101,23 @@ const Navbar = () => {
       <ul
         className={`${
           isMenuOpen ? "block" : "hidden"
-        } block sm:hidden text-yellow-50 backdrop-blur-md bg-black/60 absolute w-[100vw] font-semibold text-2xl p-4 space-y-1 z-100`}
+        } block lg:hidden text-yellow-50 backdrop-blur-md bg-black/60 absolute w-[100vw] font-semibold text-2xl p-4 space-y-1 z-100`}
       >
-        <li className="hover:underline cursor-pointer">About</li>
-        <li className="hover:underline cursor-pointer">Contact</li>
+        <Link to="#about-section" smooth>
+          <li className="hover:underline cursor-pointer">About</li>
+        </Link>
+        <Link to="#skill-section" smooth>
+          <li className="hover:underline cursor-pointer">Skills</li>
+        </Link>
+        <Link to="#project-section" smooth>
+          <li className="hover:underline cursor-pointer">Projects</li>
+        </Link>
+        <Link to="#education-section" smooth>
+          <li className="hover:underline cursor-pointer">Education</li>
+        </Link>
+        <Link to="#contact-section" smooth>
+          <li className="hover:underline cursor-pointer">Contact</li>
+        </Link>
       </ul>
     </div>
   );
