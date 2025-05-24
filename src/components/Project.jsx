@@ -39,7 +39,7 @@ const Project = () => {
   ];
 
   return (
-    <div id = "project-section" className="text-white bg-[#1c294c] w-screen min-h-screen py-8 px-4">
+    <div  className="text-white bg-[#1c294c] w-screen min-h-screen py-8 px-4">
       <div className="mb-8">
         <h1 className="text-3xl sm:text-4xl font-bold text-center hover:scale-105 transition-all duration-300 cursor-pointer">
           Projects

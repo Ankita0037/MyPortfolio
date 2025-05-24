@@ -28,7 +28,7 @@ export const Contact = () => {
   };
 
   return (
-    <div id = "contact-section" className="min-h-[100vh] bg-[#1c294c] text-white flex flex-col items-center justify-start p-4 sm:p-10 w-screen">
+    <div className="min-h-[100vh] bg-[#1c294c] text-white flex flex-col items-center justify-start p-4 sm:p-10 w-screen">
       <div className="flex items-center gap-4 mb-8">
         <FaHeadset className="text-5xl" />
         <h1 className="text-3xl sm:text-5xl font-bold">Get in Touch</h1>

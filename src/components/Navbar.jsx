@@ -22,7 +22,7 @@ const Navbar = () => {
           <Link to="/">
             <h1
               onClick={() => scrollToTop()}
-              className="relative inline-block text-2xl text-white font-bold tracking-wider cursor-pointer hover:scale-110 transition-all duration-400 before:absolute before:left-1/2 before:bottom-0 before:w-0 before:h-0.5 before:bg-white before:transition-all before:duration-400 before:ease-in-out hover:before:left-0 hover:before:w-full"
+              className="relative inline-block text-2xl text-white font-bold tracking-wider cursor-none hover:scale-110 transition-all duration-400 before:absolute before:left-1/2 before:bottom-0 before:w-0 before:h-0.5 before:bg-white before:transition-all before:duration-400 before:ease-in-out hover:before:left-0 hover:before:w-full"
             >
               AnkitaPrajapati
             </h1>
@@ -39,26 +39,26 @@ const Navbar = () => {
           </div>
 
           <ul className="hidden lg:flex gap-3.5 text-xl font-semibold text-amber-100 ">
-            <Link to="#about-section" smooth>
-              <li className="hover:underline cursor-pointer">About</li>
+            <Link to="#about" smooth>
+              <li className="hover:underline cursor-none">About</li>
             </Link>
-            <Link to="#skill-section" smooth>
-              <li className="hover:underline cursor-pointer">Skills</li>
+            <Link to="#skill" smooth>
+              <li className="hover:underline cursor-none">Skills</li>
             </Link>
-            <Link to="#project-section" smooth>
-              <li className="hover:underline cursor-pointer">Projects</li>
+            <Link to="#project" smooth>
+              <li className="hover:underline cursor-none">Projects</li>
             </Link>
-            <Link to="#education-section" smooth>
-              <li className="hover:underline cursor-pointer">Education</li>
+            <Link to="#education" smooth>
+              <li className="hover:underline cursor-none">Education</li>
             </Link>
-            <Link to="#contact-section" smooth>
-              <li className="hover:underline cursor-pointer">Contact</li>
+            <Link to="#contact" smooth>
+              <li className="hover:underline cursor-none">Contact</li>
             </Link>
 
             <a
               href="https://drive.google.com/file/d/1dd6GlVOjI60H2K3YhuDh6ek7yZOiJvjI/view?usp=drive_link"
               target="_blank"
-              className="hover:underline cursor-pointer"
+              className="hover:underline cursor-none"
             >
               Resume
             </a>
@@ -72,7 +72,7 @@ const Navbar = () => {
               <img
                 src="src/images/icons8-github-60 (1).png"
                 alt="GitHub"
-                className="h-[30px] w-[30px]"
+                className="h-[30px] w-[30px] cursor-none"
               />
             </a>
             <span className="absolute -bottom-6 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity text-xs font-medium bg-black/50 text-white px-2 py-1 rounded whitespace-nowrap z-99">
@@ -81,7 +81,7 @@ const Navbar = () => {
           </div>
 
           {/* LinkedIn */}
-          <div className="relative group">
+          <div className="relative group ">
             <a
               href="https://www.linkedin.com/in/ankita-prajapati-979304265/ "
               target="_blank"
@@ -89,7 +89,7 @@ const Navbar = () => {
               <img
                 src="src/images/icons8-linkedin-100 (1).png"
                 alt="LinkedIn"
-                className="h-[30px] w-[30px]"
+                className="h-[30px] w-[30px] cursor-none"
               />
             </a>
             <span className="absolute -bottom-6 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity text-xs font-medium bg-black/50 text-white px-2 py-1 rounded whitespace-nowrap z-99">
@@ -103,20 +103,20 @@ const Navbar = () => {
           isMenuOpen ? "block" : "hidden"
         } block lg:hidden text-yellow-50 backdrop-blur-md bg-black/60 absolute w-[100vw] font-semibold text-2xl p-4 space-y-1 z-100`}
       >
-        <Link to="#about-section" smooth>
-          <li className="hover:underline cursor-pointer">About</li>
+        <Link to="#about" smooth>
+          <li className="hover:underline cursor-none">About</li>
         </Link>
-        <Link to="#skill-section" smooth>
-          <li className="hover:underline cursor-pointer">Skills</li>
+        <Link to="#skill" smooth>
+          <li className="hover:underline cursor-none">Skills</li>
         </Link>
-        <Link to="#project-section" smooth>
-          <li className="hover:underline cursor-pointer">Projects</li>
+        <Link to="#project" smooth>
+          <li className="hover:underline cursor-none">Projects</li>
         </Link>
-        <Link to="#education-section" smooth>
-          <li className="hover:underline cursor-pointer">Education</li>
+        <Link to="#education" smooth>
+          <li className="hover:underline cursor-none">Education</li>
         </Link>
-        <Link to="#contact-section" smooth>
-          <li className="hover:underline cursor-pointer">Contact</li>
+        <Link to="#contact" smooth>
+          <li className="hover:underline cursor-none">Contact</li>
         </Link>
       </ul>
     </div>

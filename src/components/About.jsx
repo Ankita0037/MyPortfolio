@@ -4,7 +4,7 @@ import { IoMdOpen } from "react-icons/io";
 const About = () => {
   return (
     <div
-      id="about-section"
+      
       className="text-white bg-gradient-to-b from-[#0f172b] to-[#1c294c] w-full min-h-screen p-4 sm:p-6 flex flex-col items-center"
     >
       <div className="py-10 px-4 sm:px-10">
