@@ -3,10 +3,10 @@ import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
   return (
-    <div className="relative text-white bg-[#090e1a] w-screen min-h-[93vh] p-10">
+    <div className="relative text-white bg-[#090e1a] w-screen min-h-[100vh] p-5">
       {/* Hero Section */}
 
-      <div className="flex flex-col justify-between xl:flex-row xl:justify-between items-center w-100%">
+      <div className="flex flex-col justify-between xl:flex-row xl:justify-between items-center w-100% ">
         <div className="space-y-4 w-full xl:w-1/2 h-60 sm:h-auto">
           <h1 className="font-bold text-3xl tracking-wider">
             Hi, I'am Ankita Prajapati
