@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="overflow-x-hidden scroll-smooth cursor-none">
       <BrowserRouter>
-        <CustomCursor />
+        <CustomCursor className = "" />
         <Cursor />
         <Routes>
           <Route path="/" element={<Home />} />

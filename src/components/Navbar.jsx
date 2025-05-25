@@ -42,10 +42,10 @@ const Navbar = () => {
             <Link to="#about" smooth>
               <li className="hover:underline cursor-none">About</li>
             </Link>
-            <Link to="#skill" smooth>
+            <Link to="#skills" smooth>
               <li className="hover:underline cursor-none">Skills</li>
             </Link>
-            <Link to="#project" smooth>
+            <Link to="#projects" smooth>
               <li className="hover:underline cursor-none">Projects</li>
             </Link>
             <Link to="#education" smooth>
@@ -54,7 +54,6 @@ const Navbar = () => {
             <Link to="#contact" smooth>
               <li className="hover:underline cursor-none">Contact</li>
             </Link>
-
             <a
               href="https://drive.google.com/file/d/1dd6GlVOjI60H2K3YhuDh6ek7yZOiJvjI/view?usp=drive_link"
               target="_blank"
@@ -103,21 +102,35 @@ const Navbar = () => {
           isMenuOpen ? "block" : "hidden"
         } block lg:hidden text-yellow-50 backdrop-blur-md bg-black/60 absolute w-[100vw] font-semibold text-2xl p-4 space-y-1 z-100`}
       >
-        <Link to="#about" smooth>
-          <li className="hover:underline cursor-none">About</li>
-        </Link>
-        <Link to="#skill" smooth>
-          <li className="hover:underline cursor-none">Skills</li>
-        </Link>
-        <Link to="#project" smooth>
-          <li className="hover:underline cursor-none">Projects</li>
-        </Link>
-        <Link to="#education" smooth>
-          <li className="hover:underline cursor-none">Education</li>
-        </Link>
-        <Link to="#contact" smooth>
-          <li className="hover:underline cursor-none">Contact</li>
-        </Link>
+        <ul
+          className={`${
+            isMenuOpen ? "block" : "hidden"
+          } block lg:hidden text-yellow-50 backdrop-blur-md bg-black/60 absolute w-[100vw] font-semibold text-2xl p-4 space-y-1 z-100`}
+        >
+          <Link to="#about" smooth onClick={() => setIsMenuOpen(false)}>
+            <li className="hover:underline cursor-none">About</li>
+          </Link>
+          <Link to="#skills" smooth onClick={() => setIsMenuOpen(false)}>
+            <li className="hover:underline cursor-none">Skills</li>
+          </Link>
+          <Link to="#projects" smooth onClick={() => setIsMenuOpen(false)}>
+            <li className="hover:underline cursor-none">Projects</li>
+          </Link>
+          <Link to="#education" smooth onClick={() => setIsMenuOpen(false)}>
+            <li className="hover:underline cursor-none">Education</li>
+          </Link>
+          <Link to="#contact" smooth onClick={() => setIsMenuOpen(false)}>
+            <li className="hover:underline cursor-none">Contact</li>
+          </Link>
+          <a
+            href="https://drive.google.com/file/d/1dd6GlVOjI60H2K3YhuDh6ek7yZOiJvjI/view?usp=drive_link"
+            target="_blank"
+            className="hover:underline cursor-none"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Resume
+          </a>
+        </ul>
       </ul>
     </div>
   );
