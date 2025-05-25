@@ -116,9 +116,9 @@ const Hero = () => {
       </div>
 
       {/* scrolldown button */}
-      <div className="flex justify-center items-center h-20 text-white animate-pulse duration-10 cursor-none">
+      <div className="relative z-50 flex justify-center items-center h-20 text-white animate-pulse duration-10">
         <Link to="#about" smooth>
-          <RiScrollToBottomLine className="relative z-55 w-10 h-10 sm:w-14 sm:h-20 animate-bounce hover:animate-none hover:text-blue-500" />
+          <RiScrollToBottomLine className="relative z-55 w-10 h-10 sm:w-14 sm:h-20 animate-bounce hover:animate-none hover:text-blue-500 cursor-none" />
         </Link>
       </div>
     </div>

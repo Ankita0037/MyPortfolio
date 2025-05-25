@@ -80,7 +80,7 @@ export const Contact = () => {
   
               <button
                 type="submit"
-                className="flex items-center justify-center gap-2 bg-blue-800 hover:bg-blue-700 text-white text-xl font-bold py-2 px-6 rounded-md shadow-md transition-colors w-full"
+                className="flex items-center justify-center gap-2 bg-blue-800 hover:bg-blue-700 text-white text-xl font-bold py-2 px-6 rounded-md shadow-md transition-colors w-full cursor-none"
               >
                 Send <IoIosPaperPlane />
               </button>

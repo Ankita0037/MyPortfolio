@@ -26,7 +26,7 @@ const Footer = () => {
             <ul className="space-y-2">
               {['Home', 'About', 'Skills', 'Education', 'Projects'].map((item) => (
                 <Link to={`#${item.toLowerCase()}`} key = {item} >
-                <li key={item} className="flex items-center gap-2 hover:text-blue-300 transition-colors">
+                <li key={item} className="flex items-center gap-2 hover:text-blue-300 transition-colors cursor-none">
                   <FaAngleRight className="bg-blue-700 rounded-full p-1 text-white flex-shrink-0" />
                   <span className="text-sm md:text-base">{item}</span>
                 </li>

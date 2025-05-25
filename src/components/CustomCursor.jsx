@@ -10,7 +10,7 @@ const CustomCursor = () => {
 
     const detectClickable = (e) => {
       const target = e.target;
-      const clickable = target.closest("button, a, [role='button'], .cursor-pointer");
+      const clickable = target.closest("button, a, [role='button'], .cursor-none");
       setIsHoveringClickable(!!clickable);
     };
 

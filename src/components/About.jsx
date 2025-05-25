@@ -55,10 +55,10 @@ const About = () => {
             href="https://drive.google.com/file/d/1dd6GlVOjI60H2K3YhuDh6ek7yZOiJvjI/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block group mt-4"
+            className="inline-block group mt-4 cursor-none" 
           >
             <div className="border-1 bg-blue-700 text-xl sm:text-2xl font-bold rounded-[4px] px-4 py-2 w-fit flex justify-center items-center hover:bg-blue-600 transition-colors">
-              <button className="flex items-center gap-1">
+              <button className="flex items-center gap-1 cursor-none">
                 <span>Resume</span>
                 <IoMdOpen className="group-hover:translate-x-2 transition-all duration-500 ease-in-out" />
               </button>

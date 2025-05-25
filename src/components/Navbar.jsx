@@ -19,7 +19,7 @@ const Navbar = () => {
     <div className="fixed z-999 backdrop-blur-md bg-black/50 ">
       <nav className=" flex list-none justify-between items-center m-0 py-[10px] px-[20px] border-[1px] border-b-1 border-b-white w-screen">
         <div className=" flex gap-5 items-center w-[50vw]">
-          <Link to="/">
+          <Link to="#home">
             <h1
               onClick={() => scrollToTop()}
               className="relative inline-block text-2xl text-white font-bold tracking-wider cursor-none hover:scale-110 transition-all duration-400 before:absolute before:left-1/2 before:bottom-0 before:w-0 before:h-0.5 before:bg-white before:transition-all before:duration-400 before:ease-in-out hover:before:left-0 hover:before:w-full"

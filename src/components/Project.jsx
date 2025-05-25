@@ -27,7 +27,7 @@ const ProjectCard = ({ project }) => (
       </p>
       
       <div className="mt-4 text-center">
-        <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-md transition-colors">
+        <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-md transition-colors cursor-none">
           View Project
         </button>
       </div>
@@ -57,7 +57,7 @@ const Project = () => {
   return (
     <div className="text-white bg-[#1c294c] w-screen min-h-screen py-8 px-4">
       <div className="mb-12">
-        <h1 className="text-3xl sm:text-4xl font-bold text-center hover:scale-105 transition-all duration-300 cursor-pointer">
+        <h1 className="text-3xl sm:text-4xl font-bold text-center hover:scale-105 transition-all duration-300 cursor-none">
           Projects
         </h1>
       </div>
