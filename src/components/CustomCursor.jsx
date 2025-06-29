@@ -29,7 +29,7 @@ const CustomCursor = () => {
       animate={{
         x: position.x - 10,
         y: position.y - 10,
-        scale: isHoveringClickable ? 2.5 : 1,
+        scale: isHoveringClickable ? 1.5 : 1,
         opacity: isHoveringClickable ? 0.5 : 1,
       }}
       transition={{

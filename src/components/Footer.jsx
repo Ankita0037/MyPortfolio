@@ -1,6 +1,6 @@
 import React from "react";
 import { FaAngleRight } from "react-icons/fa6";
-import { HashLink as Link } from 'react-router-hash-link'
+import { HashLink as Link } from "react-router-hash-link";
 
 const Footer = () => {
   return (
@@ -24,14 +24,19 @@ const Footer = () => {
           <div className="flex-1 max-w-xs">
             <h1 className="font-bold text-2xl mb-4">Quick Links</h1>
             <ul className="space-y-2">
-              {['Home', 'About', 'Skills', 'Education', 'Projects'].map((item) => (
-                <Link to={`#${item.toLowerCase()}`} key = {item} >
-                <li key={item} className="flex items-center gap-2 hover:text-blue-300 transition-colors cursor-none">
-                  <FaAngleRight className="bg-blue-700 rounded-full p-1 text-white flex-shrink-0" />
-                  <span className="text-sm md:text-base">{item}</span>
-                </li>
-                </Link>
-              ))}
+              {["Home", "About", "Skills", "Education", "Projects"].map(
+                (item) => (
+                  <Link to={`#${item.toLowerCase()}`} key={item}>
+                    <li
+                      key={item}
+                      className="flex items-center gap-2 hover:text-blue-300 transition-colors cursor-none"
+                    >
+                      <FaAngleRight className="bg-blue-700 rounded-full p-1 text-white flex-shrink-0" />
+                      <span className="text-sm md:text-base">{item}</span>
+                    </li>
+                  </Link>
+                )
+              )}
             </ul>
           </div>
 
@@ -39,8 +44,15 @@ const Footer = () => {
           <div className="flex-1 max-w-xs">
             <h1 className="font-bold text-2xl mb-4">Contact Info</h1>
             <div className="space-y-2">
-              <p className="text-sm md:text-base">prajapatiankita084@gmail.com</p>
+              <p className="text-sm md:text-base">
+                prajapatiankita084@gmail.com
+              </p>
               <p className="text-sm md:text-base">Mumbai, India-401209</p>
+              <a
+                href="https://drive.google.com/file/d/1dd6GlVOjI60H2K3YhuDh6ek7yZOiJvjI/view?usp=drive_link"
+                target="_blank"
+                className="hover:underline cursor-pointer sm:cursor-none"
+              ></a>
             </div>
           </div>
         </div>

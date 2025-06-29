@@ -6,7 +6,7 @@ const Education = () => {
     <div className=" text-white bg-[#1c294c] w-screen min-h-[100vh] p-4 sm:p-6 flex flex-col items-center">
       {/* Title Section */}
       <div className="flex flex-col items-center mb-10 sm:mb-20 w-full">
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 mt-14">
           <FaGraduationCap className="text-4xl sm:text-5xl" />
           <h1 className="text-3xl sm:text-5xl font-bold text-center">
             My Education
@@ -15,7 +15,7 @@ const Education = () => {
       </div>
 
       {/* Education Card */}
-      <div className="w-full max-w-4xl space-y-5">
+      <div className="w-full max-w-4xl space-y-3">
         <div className="bg-[#101d42] border-2 border-blue-900 rounded-lg shadow-lg p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-6 sm:gap-8">
           {/* College Image */}
           <div className="min-w-[160px]">
