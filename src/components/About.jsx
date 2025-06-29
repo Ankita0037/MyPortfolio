@@ -88,7 +88,7 @@ const About = () => {
           whileHover="hover"
         >
           <motion.img
-            src="src\images\my photo.jpg"
+            src="/my photo.jpg"
             className="rounded-[10px] h-60 w-60 sm:h-100 sm:w-80 object-cover shadow-lg shadow-[#2e30aa]"
             alt="Profile photo"
             initial={{ rotate: -5 }}

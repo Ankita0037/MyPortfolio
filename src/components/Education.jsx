@@ -20,7 +20,7 @@ const Education = () => {
           {/* College Image */}
           <div className="min-w-[160px]">
             <img
-              src="src\images\timscdr.jpg"
+              src="/timscdr.jpg"
               alt="Shankar Narayan College"
               className="w-40 h-auto rounded-md object-cover"
             />
@@ -43,7 +43,7 @@ const Education = () => {
           {/* College Image */}
           <div className="min-w-[160px]">
             <img
-              src="src/images/sn college.avif"
+              src="/sn college.avif"
               alt="Shankar Narayan College"
               className="w-40 h-auto rounded-md object-cover"
             />
@@ -66,7 +66,7 @@ const Education = () => {
           {/* College Image */}
           <div className="min-w-[160px]">
             <img
-              src="src\images\Kapol clg.avif"
+              src="/Kapol clg.avif"
               alt="Shankar Narayan College"
               className="w-40 h-auto rounded-md object-cover"
             />
