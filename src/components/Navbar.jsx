@@ -178,7 +178,7 @@ const Navbar = () => {
           >
             <a href="https://github.com/Sushils-Coding" target="_blank">
               <img
-                src="src/images/icons8-github-60 (1).png"
+                src="/icons8-github-60 (1).png"
                 alt="GitHub"
                 className="h-[30px] w-[30px] cursor-pointer sm:cursor-none"
               />
@@ -203,7 +203,7 @@ const Navbar = () => {
               target="_blank"
             >
               <img
-                src="src/images/icons8-linkedin-100 (1).png"
+                src="/icons8-linkedin-100 (1).png"
                 alt="LinkedIn"
                 className="h-[30px] w-[30px] cursor-pointer sm:cursor-none"
               />
