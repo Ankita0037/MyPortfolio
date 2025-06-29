@@ -8,7 +8,7 @@ const CustomCursor = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768); // Tailwind's md breakpoint (768px)
+      setIsMobile(window.innerWidth < 768);
     };
 
     const move = (e) => setPosition({ x: e.clientX, y: e.clientY });
@@ -23,7 +23,7 @@ const CustomCursor = () => {
     window.addEventListener("mouseover", detectClickable);
     window.addEventListener("resize", handleResize);
 
-    handleResize(); // Check on first load
+    handleResize();
 
     return () => {
       window.removeEventListener("mousemove", move);
@@ -32,7 +32,7 @@ const CustomCursor = () => {
     };
   }, []);
 
-  if (isMobile) return null; // 👈 Hide cursor completely on mobile
+  if (isMobile) return null; // Hide cursor entirely on mobile
 
   return (
     <motion.div
@@ -51,6 +51,7 @@ const CustomCursor = () => {
       style={{
         width: 20,
         height: 20,
+        boxShadow: isMobile ? 'none' : '0 0 10px rgba(0,0,0,0.25)',
       }}
     />
   );
