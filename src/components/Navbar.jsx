@@ -176,7 +176,7 @@ const Navbar = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            <a href="https://github.com/Sushils-Coding" target="_blank">
+            <a href="https://github.com/Ankita0037" target="_blank">
               <img
                 src="/icons8-github-60 (1).png"
                 alt="GitHub"
@@ -199,7 +199,7 @@ const Navbar = () => {
             whileTap={{ scale: 0.9 }}
           >
             <a
-              href="https://www.linkedin.com/in/sushil-verma-679444297/"
+              href="https://www.linkedin.com/in/ankita-prajapati-979304265?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
               target="_blank"
             >
               <img
