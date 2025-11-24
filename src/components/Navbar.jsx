@@ -20,7 +20,7 @@ const Navbar = () => {
   // Handle scroll to determine active section
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "about", "skills", "projects", "education", "contact"];
+      const sections = ["home", "about", "skills", "projects", "experience", "education", "contact"];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -133,7 +133,7 @@ const Navbar = () => {
             initial="hidden"
             animate="show"
           >
-            {['about', 'skills', 'projects', 'education', 'contact'].map((section) => (
+            {['about', 'skills', 'projects', 'experience', 'education', 'contact'].map((section) => (
               <motion.li key={section} variants={itemVariants}>
                 <Link to={`#${section}`} smooth onClick={() => handleNavClick(section)}>
                   <motion.span 
@@ -149,7 +149,7 @@ const Navbar = () => {
 
             <motion.li variants={itemVariants}>
               <a
-                href="https://drive.google.com/file/d/1dd6GlVOjI60H2K3YhuDh6ek7yZOiJvjI/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1bxyP8GM_cALmLFFgictcf52LXPtcJUl4/view?usp=sharing"
                 target="_blank"
                 className="hover:underline cursor-pointer sm:cursor-none"
               >
@@ -228,7 +228,7 @@ const Navbar = () => {
             animate="open"
             exit="closed"
           >
-            {['about', 'skills', 'projects', 'education', 'contact'].map((section) => (
+            {['about', 'skills', 'projects', 'experience', 'education', 'contact'].map((section) => (
               <motion.li 
                 key={section}
                 variants={mobileItemVariants}
@@ -242,7 +242,7 @@ const Navbar = () => {
 
             <motion.li variants={mobileItemVariants}>
               <a
-                href="https://drive.google.com/file/d/1dd6GlVOjI60H2K3YhuDh6ek7yZOiJvjI/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1bxyP8GM_cALmLFFgictcf52LXPtcJUl4/view?usp=sharing"
                 target="_blank"
                 className="hover:underline cursor-pointer sm:cursor-none"
               >

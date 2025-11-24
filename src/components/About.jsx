@@ -161,7 +161,7 @@ const About = () => {
           </motion.div>
 
           <motion.a
-            href="https://drive.google.com/file/d/1dd6GlVOjI60H2K3YhuDh6ek7yZOiJvjI/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1bxyP8GM_cALmLFFgictcf52LXPtcJUl4/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block group mt-4 cursor-pointer sm:cursor-none"

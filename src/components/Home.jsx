@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import Hero from "./Hero";
 import Skills from "./Skills";
 import Project from "./Project";
+import Experience from "./Experience";
 import Education from "./Education";
 import Contact from "./Contact";
 import About from "./About";
@@ -25,6 +26,9 @@ const Home = () => {
       </section>
       <section id="projects" className="snap-center min-h-screen h-auto">
         <Project />
+      </section>
+      <section id="experience" className="snap-center min-h-screen h-auto">
+        <Experience />
       </section>
       <section id="education" className="snap-center min-h-screen h-auto">
         <Education />
